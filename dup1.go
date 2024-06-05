@@ -11,5 +11,6 @@ func main() {
 	for input.Scan() {
 		counts[input.Text()]++
 	}
+	// Note: ignore potential errors from input.Err()
 
 }
