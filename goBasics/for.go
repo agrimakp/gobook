@@ -26,4 +26,12 @@ func main() {
 		break
 	}
 
+	// continue
+	// odd numbers
+	for n := range 9 {
+		if n%2 == 0 {
+			continue
+		}
+		fmt.Println(n)
+	}
 }
