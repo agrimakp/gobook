@@ -2,7 +2,12 @@ package main
 
 import "fmt"
 
+var global = "global"
+
 func main() {
+
+	fmt.Println(global)
+
 	var a = "initial"
 	fmt.Println(a)
 	var g = 3
