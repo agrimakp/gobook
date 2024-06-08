@@ -7,7 +7,7 @@ import (
 func main() {
 	i := 2
 	fmt.Println(" write", i, " as ")
-
+	// basic switch
 	switch i {
 	case 1:
 		fmt.Println("One")
