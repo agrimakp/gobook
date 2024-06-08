@@ -18,7 +18,7 @@ func main() {
 		fmt.Println("Three")
 	}
 	
-
+	// switch with an expression
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
