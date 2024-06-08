@@ -17,6 +17,7 @@ func main() {
 	case 3:
 		fmt.Println("Three")
 	}
+	
 
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
@@ -25,4 +26,14 @@ func main() {
 		fmt.Println("It's Working day")
 	}
 
+	//  switch without an expression
+
+	t := time.Now()
+
+	switch {
+	  case t.Hour() < 12:
+		  fmt.Println("It's before noon")
+          default: 
+	        fmt.Println("")
+	}
 }
