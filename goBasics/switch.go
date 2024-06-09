@@ -34,6 +34,21 @@ func main() {
 	  case t.Hour() < 12:
 		  fmt.Println("It's before noon")
           default: 
-	        fmt.Println("")
+	          fmt.Println("It's after noon")
 	}
+
+	whatAmI := func(i interface{}) {
+	 switch t := i.(type){
+		case bool: 
+		   fmt.Println("I'm a bool")
+		case int:
+		   fmt.Println("I'm an int")
+		default: 
+		   fmt.Printf("Dont know type %T\n ", t)
+	 }
+	}
+
+	whatAmI(1)
+	whatAmI(true)
+	whatAmI("lalala")
 }
